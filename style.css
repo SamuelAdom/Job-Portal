@@ -169,7 +169,6 @@ label{
     left: -50%;
     z-index: 1;
    
-    
 }
 .job-list h1{
     font-size: 2rem;
@@ -310,7 +309,6 @@ ul{
 .company-image img{
     width: 5%;
    
-    
 }
 .slide-right{animation:slide-right .9s cubic-bezier(.68,-.55,.265,1.55) infinite alternate-reverse both}
 
@@ -362,7 +360,7 @@ ul{
 }
 .container-box {
     width: 100%;
-    padding: 13rem 0;
+    padding: 13.5rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -380,8 +378,8 @@ ul{
 #btn {
     text-align: center;
     margin-top: 20px;
-    padding: 10px 55px;
-    font-size: 2rem;
+    padding: 10px 30px;
+    font-size: 1rem;
  }
  #head {
     position: relative;
@@ -409,6 +407,21 @@ ul{
 
     display: none;
  }
+ 
+ .job-container{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   row-gap: 10px;
+   
+    
+ }
+ #selection {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 10px;
+  
+  }
+ 
 
  
 
@@ -459,14 +472,19 @@ display:none ;
     }
  .card{
     width: 100%;
+   
  }
-.job-container{
-    display: flex;
-    flex-direction: column;
+ .job-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
     text-align: center;
-
-
     
+ }
+ #selection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #icon{
