@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous">
+    <link rel="icon" type="image/svg" href="assests/star.svg">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <title>Job Portal</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar">
+          <div class="container">
+           
+            <!---logo-->
+            <a class="navbar-brand me-auto" href="index.html"><span id="logo">Next</span>Hire</a>
+           
+                 
+            <!--toggler and login button-->
+            <button type="button" id="recuitersBtn">Recuiters Login</button>
+            <button type="button" id="loginBtn">Login</button>
+        </nav>
+      </header>
+    <div class="container">
+        <div class="container-box">
+            <div class="container-details">
+                <p id="head">Apply to 10,000+ exciting job openings today!</p>
+                <p> Ready for Your Next Career Leap? Discover Top Job Opportunities and Take the First Step Toward Success!</p>
+                <div class="search-bar">
+                    <input type="text" placeholder="Searh for jobs" id="job"><i class="bi bi-search"></i>
+                    <input type="text" placeholder="Location" id="location"><i class="bi bi-geo"></i>
+                    <button type="button" id="btn">Search</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <section id="selection">
+    
+<div class="categories">
+    <div class="category">
+        <h1>Filters</h1>
+        <input type="checkbox" id="programming" data-target="programming">
+        <label for="programming">Programming</label>
+       
+    </div>
+    <div class="category">
+       <input type="checkbox" id="design" data-target="design">
+        <label for="design">Design</label>
+    </div>
+  
+    <div class="category">
+       <input type="checkbox" id="finance" data-target="finance">
+        <label for="finance">Finance</label>
+    </div>
+    <div class="category">
+         <input type="checkbox" id="all" data-target="engineering">
+          <label for="all">Engineering</label>
+     
+    </div>
+    <div class="category">
+       <input type="checkbox" id="cyber" data-target="cybersecurity networking">
+        <label for="cyber">Cybersecurity</label>
+    
+   </div>
+   <div class="category">
+    <input type="checkbox" id="net" data-target="networking cybersecurity">
+     <label for="net">Networking</label>
+
+</div>
+<div class="category">
+    <input type="checkbox" id="ds" data-target="data">
+     <label for="ds">Data Science</label>
+
+</div>
+<div class="category">
+  <h1>Location</h1>
+  <input type="checkbox" id="accra" data-location="accra">
+  <label for="accra">Accra</label>
+ 
+</div>
+<div class="category">
+  <input type="checkbox" id="newyork" data-location="newyork">
+  <label for="newyork">New York</label>
+ 
+</div>
+<div class="category">
+  <input type="checkbox" id="paris" data-location="paris">
+  <label for="paris">Paris</label>
+ 
+</div>
+<div class="category">
+  <input type="checkbox" id="london" data-location="london">
+  <label for="london">London</label>
+ 
+</div>
+<div class="category">
+  <input type="checkbox" id="bang" data-location="Bangalore">
+  <label for="bang">Bangalore</label>
+ 
+</div>
+<div class="category">
+  <input type="checkbox" id="california" data-location="california">
+  <label for="california">California</label>
+ 
+</div>
+<div class="category">
+  <input type="checkbox" id="kumasi" data-location="kumasi">
+  <label for="kumasi">Kumasi</label>
+ 
+</div>
+<div class="category">
+  <input type="checkbox" id="lagos" data-location="lagos">
+  <label for="lagos">Lagos</label>
+ 
+</div>
+   
+</div>
+    
+<div class="job-list">
+    <h1>
+        Latest Jobs
+    </h1>
+    <div class="job-container">
+      
+    <div class="card" style="width: 18rem;" data-category="programming" data-location="london">
+        
+        <div class="card-body">
+          <img src="./assests/google.png" >
+          <h6 class="card-subtitle">Frontend Developer</h6>
+          <button type="button" class="des" id="city">London</button>
+          <button type="button" class="des" id="level">Advanced level</button>
+          <p class="card-text"> Designs and builds user interfaces using HTML, CSS, and JavaScript frameworks like React, Vue, or Angular to create responsive and interactive web applications</p>
+          <a href="jobs.html?id=1" 
+          class="apply-btn" 
+          data-id="1">
+          <button type="button" class="btn btn-primary">Apply Now</button>
+       </a>
+       
+       <a href="jobs.html?id=1" 
+       class="apply-btn" 
+       data-id="1">
+       <button type="button" class="btn btn-outline-primary">Learn More</button>
+    </a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;" data-category="programming networking engineering" data-location="newyork">
+        <div class="card-body">
+          <img src="./assests/apple.jpg">
+          <h6 class="card-subtitle">DevOps Engineer</h6>
+          <button type="button" class="des" id="city">New York</button>
+          <button type="button" class="des" id="level">Senior level</button>
+          <p class="card-text">Bridges development and operations by automating workflows, managing CI/CD pipelines, and ensuring deployment of applications.</p>
+          <a href="jobs.html?id=2" 
+          class="apply-btn" 
+          data-id="2">
+          <button type="button" class="btn btn-primary">Apply Now</button>
+       </a>
+       
+       <a href="jobs.html?id=2" 
+       class="apply-btn" 
+       data-id="2">
+       <button type="button" class="btn btn-outline-primary">Learn More</button>
+    </a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;" data-category="networking cybersecurity" data-location="accra">
+        <div class="card-body">
+          <img src="./assests/comsys.ico">
+          <h6 class="card-subtitle">System Administrator</h6>
+          <button type="button" class="des" id="city">Accra</button>
+          <button type="button" class="des" id="level">Senior level</button>
+          <p class="card-text"> Manages and maintains the organization's IT infrastructure, including servers, networks, and security systems. Ensures system reliability and performance</p>
+          <a href="jobs.html?id=3" 
+          class="apply-btn" 
+          data-id="3">
+          <button type="button" class="btn btn-primary">Apply Now</button>
+       </a>
+       
+       <a href="jobs.html?id=3" 
+       class="apply-btn" 
+       data-id="3">
+       <button type="button" class="btn btn-outline-primary">Learn More</button>
+    </a>
+    
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;" data-category="finance" data-location="california">
+        <div class="card-body">
+          <img src="./assests/amazon.jpg">
+          <h6 class="card-subtitle">Digital Marketing Manager</h6>
+          <button type="button" class="des" id="city">California</button>
+          <button type="button" class="des" id="level">Intermediate level</button>
+          <p class="card-text">Oversees online marketing strategies, SEO, PPC, and social media campaigns to drive brand awareness.</p>
+          <a href="jobs.html?id=4" 
+          class="apply-btn" 
+          data-id="4">
+          <button type="button" class="btn btn-primary">Apply Now</button>
+       </a>
+       
+       <a href="jobs.html?id=4" 
+       class="apply-btn" 
+       data-id="4">
+       <button type="button" class="btn btn-outline-primary">Learn More</button>
+    </a>
+        </div>
+      </div>
+    
+      <div class="card" style="width: 18rem;" data-category="data" data-location="Bangalore">
+        <div class="card-body">
+          <img src="./assests/edureka.png">
+          <h6 class="card-subtitle">Data Scientist</h6>
+          <button type="button" class="des" id="city">Bangalore</button>
+          <button type="button" class="des" id="level">Senior level</button>
+          <p class="card-text"> Analyzes complex data to extract insights, build predictive models, and support decision-making. Proficient in machine learning</p>
+          <a href="jobs.html?id=5" 
+          class="apply-btn" 
+          data-id="5">
+          <button type="button" class="btn btn-primary">Apply Now</button>
+       </a>
+       
+       <a href="jobs.html?id=5" 
+       class="apply-btn" 
+       data-id="5">
+       <button type="button" class="btn btn-outline-primary">Learn More</button>
+    </a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;" data-category="finance" data-location="kumasi">
+        <div class="card-body">
+          <img src="./assests/GT.webp">
+          <h6 class="card-subtitle">Treasury Analyst</h6>
+          <button type="button" class="des" id="city">Kumasi</button>
+          <button type="button" class="des" id="level">Intermediate level</button>
+          <p class="card-text"> Manages cash flow and liquidity to optimize corporate finances.Monitors market conditions and financial risks</p>
+          <a href="jobs.html?id=6" 
+          class="apply-btn" 
+          data-id="6">
+          <button type="button" class="btn btn-primary">Apply Now</button>
+       </a>
+       <a href="jobs.html?id=6" 
+       class="apply-btn" 
+       data-id="6">
+       <button type="button" class="btn btn-outline-primary">Learn More</button>
+    </a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;" data-category="design" data-location="paris">
+        <div class="card-body">
+          <img src="./assests/insta.jpg">
+          <h6 class="card-subtitle"> UI/UX Designer</h6>
+          <button type="button" class="des" id="city">Paris</button>
+          <button type="button" class="des" id="level">Intermediate level</button>
+          <p class="card-text">Create engaging, user-friendly digital experiences. The ideal candidate will be responsible for designing intuitive interfaces, conducting user research.</p>
+          <a href="jobs.html?id=7" 
+          class="apply-btn" 
+          data-id="7">
+          <button type="button" class="btn btn-primary">Apply Now</button>
+       </a>
+       
+       <a href="jobs.html?id=7" 
+       class="apply-btn" 
+       data-id="7">
+       <button type="button" class="btn btn-outline-primary">Learn More</button>
+    </a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;" data-category="engineering programming" data-location="lagos">
+        <div class="card-body">
+          <img src="./assests/bolt.png" width="5%" height="auto">
+          <h6 class="card-subtitle">Software Engineer (Backend)</h6>
+          <button type="button" class="des" id="city">Lagos</button>
+          <button type="button" class="des" id="level">Intermediate level</button>
+          <p class="card-text">Collaborating with product teams to unlock new business opportunities, ensuring system reliability, and improving platform scalability.</p>
+          <a href="jobs.html?id=8" 
+          class="apply-btn" 
+          data-id="8">
+          <button type="button" class="btn btn-primary">Apply Now</button>
+       </a>
+       
+       <a href="jobs.html?id=8" 
+       class="apply-btn" 
+       data-id="8">
+       <button type="button" class="btn btn-outline-primary">Learn More</button>
+    </a>
+        </div>
+      </div>
+     
+      <div class="card" style="width: 18rem;" data-category="design" data-location="accra">
+        <div class="card-body">
+          <img src="./assests/yahoo.png">
+          <h6 class="card-subtitle">Producer, Yahoo Finance Live</h6>
+          <button type="button" class="des" id="city">Accra</button>
+          <button type="button" class="des" id="level">Senior level</button>
+          <p class="card-text">Coordinate and produce live financial news segments, ensuring accurate and timely dissemination of market information to the audience.</p>
+          <a href="jobs.html?id=9" 
+          class="apply-btn" 
+          data-id="9">
+          <button type="button" class="btn btn-primary">Apply Now</button>
+       </a>
+       
+       <a href="jobs.html?id=9" 
+       class="apply-btn" 
+       data-id="9">
+       <button type="button" class="btn btn-outline-primary">Learn More</button>
+    </a>
+    
+        </div>
+      </div>
+
+
+      <div class="card" style="width: 18rem;" data-category="data" data-location="california">
+        <div class="card-body">
+          <img src="./assests/facebook.png">
+          <h6 class="card-subtitle">Data Scientist, Marketing Analytics</h6>
+          <button type="button" class="des" id="city">California</button>
+          <button type="button" class="des" id="level">Intermediate level</button>
+          <p class="card-text">You will analyze large datasets to measure the effectiveness of marketing campaigns, optimize advertising strategies, and provide insights to improve ROI. </p>
+          <a href="jobs.html?id=10" 
+          class="apply-btn" 
+          data-id="10">
+          <button type="button" class="btn btn-primary">Apply Now</button>
+       </a>
+       
+       <a href="jobs.html?id=10" 
+       class="apply-btn" 
+       data-id="10">
+       <button type="button" class="btn btn-outline-primary">Learn More</button>
+    </a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;" data-category="design" data-location="lagos">
+        <div class="card-body">
+          <img src="./assests/linkedin.png">
+          <h6 class="card-subtitle">  Graphic Designer</h6>
+          <button type="button" class="des" id="city">Lagos</button>
+          <button type="button" class="des" id="level">Intermediate level</button>
+          <p class="card-text">We are looking for a creative and detail-oriented Graphic Designer to join our team. The ideal candidate will be responsible for creating visually engaging designs for digital and print media.</p>
+          <a href="jobs.html?id=11" 
+          class="apply-btn" 
+          data-id="11">
+          <button type="button" class="btn btn-primary">Apply Now</button>
+       </a>
+       
+       <a href="jobs.html?id=11" 
+       class="apply-btn" 
+       data-id="11">
+       <button type="button" class="btn btn-outline-primary">Learn More</button>
+    </a>
+    
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;" data-category="programming" data-location="newyork">
+        <div class="card-body">
+          <img src="./assests/wordpress.png">
+          <h6 class="card-subtitle">WordPress Developer</h6>
+          <button type="button" class="des" id="city">New York</button>
+          <button type="button" class="des" id="level">Senior level</button>
+          <p class="card-text">Responsible for both back-end and front-end development, including creating custom themes and plugins. This role requires a combination of programming skills</p>
+          <a href="jobs.html?id=12" 
+          class="apply-btn" 
+          data-id="12">
+          <button type="button" class="btn btn-primary">Apply Now</button>
+       </a>
+       
+       <a href="jobs.html?id=12" 
+       class="apply-btn" 
+       data-id="12">
+       <button type="button" class="btn btn-outline-primary">Learn More</button>
+    </a>
+        </div>
+      </div>
+      
+    </div>
+    
+    
+    
+</div>
+
+
+<div class="pagination-container">
+  <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item" id="prev"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item" id="next"><a class="page-link" href="#">Next</a></li>
+      </ul>
+  </nav>
+</div>
+</section>
+<section class="companies">
+  <h5>Trusted Companies</h5>
+  <div class="company">
+    <div class="slide-right">
+<div class="company-image">
+
+  <img src="assests/instagram.png">
+  <img src="assests/gog.png">
+  <img src="assests/wordpress.png">
+  <img src="assests/linkedin.png">
+  <img src="assests/uber.png">
+  <img src="assests/app.png">
+  <img src="assests/yahoo.png">
+</div>
+</div>
+  </div>
+</section>
+<section class="footer">
+  <div class="footer-box">
+    <div class="latesnews">
+      <h1 class="footer-heading">Latest News</h1>
+      <p>NextHire plans to introduce real-time interview scheduling and automated resume screening in the coming months, making it a one-stop solution for job recruitment.</p>
+      <hr id="line">
+      <p>
+        With this new feature, job applicants will receive personalized job recommendations based on their skills, experience, and career goals. The system also helps recruiters by automatically shortlisting top candidates, reducing hiring time by up to 50%.
+      </p>
+      <hr id="line">
+      <p>“Our goal is to make job hunting and recruitment as seamless as possible,” said Samuel Debrah Mireku, a frontend engineer working on the platform. “With AI-driven matching, we’re improving efficiency for both job seekers and employers.”
+      </p>
+      <hr id="line">
+      <p> NextHire, the innovative job recruitment platform, has announced the launch of its AI-powered job matching system, designed to connect job seekers with the most suitable employers in record time.</p>
+      <hr id="line">
+    </div>
+  </div>
+  <div class="cn-info">
+    <h1 class="footer-heading">Contact Us</h1>
+    <p>Get In Touch.</p>
+    <hr id="line">
+    <p><span id="News">Phone: </span>(233) 333 9854</p>
+    <hr id="line">
+    <p><span id='News'>Fax: </span>(233) 333 9854</p>
+    <hr id="line">
+    <p><span id="News">Email: </span>info@example.com</p>
+    <hr id="line">
+  </div>
+  <div class="social-icons">
+    <h1 class="footer-heading"><span id="News">Next</span>Hire</h1>
+    <i class="bi bi-facebook"  id="icon"></i>
+    <i class="bi bi-twitter-x" id="icon"></i>
+    <i class="bi bi-instagram" id="icon"></i>
+    <i class="bi bi-google" id="icon"></i>
+    <i class="bi bi-skype" id="icon"></i>
+  </div>
+  
+  
+  
+  
+</section>
+
+<!--copyright section-->
+<section>
+  <div class="end">
+    <p class="end">Copyright &copy; 2025. All Rights Reserved.</p>
+  </div>
+ 
+</section>
+
+
+
+
+
+ <script>
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"
+            </script>
+ <script src="app.js"></script>
+</body>
+</html>
