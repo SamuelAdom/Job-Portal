@@ -1,0 +1,43 @@
+Job Portal - Frontend
+
+Project Overview
+
+The Job Portal is a web application designed to help job seekers find job opportunities and apply for positions. Employers can also post job listings to connect with potential candidates. This project focuses on the frontend development of the platform.
+
+Technologies Used
+
+HTML - Structuring the web pages.
+
+CSS - Styling and layout design.
+
+JavaScript - Adding interactivity and dynamic behavior.
+
+Bootstrap - Responsive design and UI components.
+
+Features
+
+Job Listings: Display available jobs with relevant details.
+
+Search & Filter: Users can search and filter jobs by category, location, and keywords.
+
+Job Application Form: Allows users to apply for jobs directly.
+
+Responsive Design: Ensures compatibility across different devices.
+
+
+Installation & Setup
+
+Clone the repository:
+
+Navigate to the project folder:
+
+Open index.html in a browser to view the application.
+
+Usage
+
+Open the website and browse through the job listings.
+
+Use the search and filter options to find relevant jobs.
+
+Click on a job to view details and apply using the provided form.
+
